@@ -1,6 +1,6 @@
 let constraint = 20;
 let mouseOverContainer = document.getElementById("container");
-let scene = document.getElementById("scene");
+let model = document.getElementById("model");
 let head = document.getElementById("head");
 
 function bodyTransforms(x, y, el) {
@@ -33,10 +33,10 @@ function transformHead(el, xyEl) {
 
 mouseOverContainer.onmousemove = function(e) {
   let xy = [e.clientX, e.clientY];
-  let position = xy.concat([scene]);
+  let position = xy.concat([model]);
 
   window.requestAnimationFrame(function(){
-    transformBody(scene, position);
+    transformBody(model, position);
     transformHead(head, position);
   });
 };

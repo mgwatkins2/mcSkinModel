@@ -1,6 +1,6 @@
 :root {
+  /* REPLACE WITH YOUR OWN UUID */
   --skin: url(https://crafatar.com/skins/c524c06b-66ff-4256-955c-5a7d6b8f1359);
-  --skinOffline: url(./skin.png);
 }
 
 .container3d {
